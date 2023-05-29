@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto Desafio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://app.aluracursos.com/user/sebasrami8" target="_blank" ><img src="img/Logo.png" alt="logoAlura"></a>
+            <a href="https://www.oracle.com/co/education/oracle-next-education/" target="_blank"><img src="img/Logo2.png" alt="logoOne"></a>
+
+
+            <a href="https://www.linkedin.com/in/sebastian-ramirez-90599a253/" target="_blank"><img class="derecha" src="img/linkedin.png" alt="logoLinkedin"></a>
+            <a href="https://github.com/SebitasRaGa88" target="_blank"><img class="derecha" src="img/github.png" alt="logoGitHub"></a>
+        </div>
+    </header>
+    <div class="contenedor">
+        <!-- Lado izquierdo -->
+        <div class="entrada">
+            <div class="texto">
+                <textarea name="iTexto" id="iTexto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="warning">
+                <img src="img/Warning.png" alt="Advertencia" >
+                <p>Solo letras minusculas y sin acento</p>
+            </div>
+            <div class="botones">
+                <button type="button" id="btnEncriptar" onclick="encriptarTexto()" href="#oTexto">Encriptar</button>
+                <button type="button" id="btnDesencriptar" onclick="desencriptarTexto()" href="#oTexto">Desencriptar</button>
+            </div>
+        </div>
+        <!-- Lado derecho -->
+        <div class="salida">
+            <div id="divMostrarImagen" class="mostrar-imagen">
+                <img src="img/Muñeco.png" alt="Ningún mensaje fue encontrado">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div id="divMostrarTexto" class="mostrar-texto">
+                <textarea name="oTexto" id="oTexto" cols="30" rows="10" readonly></textarea>
+                <div class="boton">
+                    <button type="button" id="btnCopiar" onclick="copiarTexto()">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
